@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+ 
 class Counter extends Component {
    
     
@@ -15,7 +15,7 @@ class Counter extends Component {
         return (
             <div className='row'>
                 <div className="col-1">{this.customizeCount( )}</div> 
-                <div className="col">
+                <div className="col-2">
                 <button onClick={()=>this.props.onIncrement(this.props.counter)}
                  className="btn btn-primary  btn-sm m-2">+</button>
                  <button onClick={()=>this.props.onDecrement(this.props.counter)}    
