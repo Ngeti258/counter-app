@@ -38,9 +38,11 @@ handleDecrement=(counter)=>{
    this.setState({counters})
 
 }
+
    render() { 
       return (
         <div>
+          <link to='/login'className='btn btn-primary'>Login</link>
         <Navbar totalCounters={this.state.counters.filter(c=>c.value>0).length}/>
         <main className='container'>      
           <Counters 
